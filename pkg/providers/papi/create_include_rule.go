@@ -124,7 +124,7 @@ func createIncludeRule(ctx context.Context, contractID, includeName, ruleName, s
 	}
 
 	term.Spinner().OK()
-	term.Printf("Terraform configuration for include '%s' was saved successfully\n", includeData.IncludeName)
+	term.Printf("Terraform configuration for include rule '%s' was saved successfully\n", ruleName)
 
 	return nil
 }
