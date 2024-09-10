@@ -103,7 +103,7 @@ func createIncludeRule(ctx context.Context, contractID, includeName, ruleName, s
 				rules.Rules,
 			},
 		}
-		includeData.Rules = flattenRules(ruleName, dummyDefaultRule)
+		includeData.Rules = flattenRules(includeName, dummyDefaultRule)
 	}
 
 	tfData.Includes = append(tfData.Includes, includeData)
